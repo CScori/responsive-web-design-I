@@ -204,3 +204,74 @@ address{
     }
 
 }
+/* adds phone*/
+@media(max-width: 500px){
+    .header{
+        width: 55%;
+        flex-direction: column-reverse;
+    }
+    .header .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .header .nav a{
+        width: 99%;
+        padding: 15px 200px;
+        margin: 0;
+        border-bottom: 1px solid gray;
+    }
+    .header .nav:first-child{
+        border-top: 1px solid gray;
+    }
+   .title{
+    justify-content: space-evenly;
+       width: 15%;
+       padding: 50px;
+
+   }
+   .information{
+       flex-direction: column;
+       width: 50%;
+       padding: 10px 0px;
+       margin: 0 15px;
+   }
+   .information div{
+       width: 100%;
+   }
+   .infoimg{
+       width: 50%;
+       margin: 5px;
+   }
+   .information2{
+    flex-direction: column;
+    width: 50%;
+    padding: 10px 0px;
+    margin: 0 15px;
+   }
+   .information2 div{
+    margin-top: 20px;
+    width: 100%;
+}
+.footer{
+    width: 25%;
+    margin: 20px;
+}
+.footer h2{
+    width: 90%;
+    margin: 10px 0;
+  }
+  .footer p{
+    width: 100%;
+    margin: 10px 0;
+    l
+  }
+  address{
+    width: 90%;
+    margin: 5px 0 15px;
+  }
+
+}
+
+
