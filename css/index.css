@@ -58,9 +58,11 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-/* {
-  width: 900px;
-}*/
+* {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .header {
   width: 100%;
   height: 20%;
@@ -110,8 +112,8 @@ h1, h2, h3, h4, h5 {
   height: 300px;
 }
 .information {
-  border-top: black 1px solid;
   width: 95%;
+  border-top: black 1px solid;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -121,6 +123,7 @@ h1, h2, h3, h4, h5 {
   width: 50%;
 }
 .information p {
+  width: 100%;
   height: 100px;
 }
 .infoimg {
@@ -137,9 +140,15 @@ h1, h2, h3, h4, h5 {
 .information2 div {
   width: 33%;
 }
-
+.information2 p {
+  width: 100%;
+  height: 100px;
+}
 .information2 h2 {
   padding-right: 180px;
+}
+.footer {
+  padding: 25px;
 }
 .address {
   width: 20%;
@@ -157,7 +166,7 @@ h1, h2, h3, h4, h5 {
     }
     .header .nav {
         width: 95%;
-        margin: 10px 50px;
+  
         justify-content: space-around;
     }
     .header .nav a {
@@ -175,9 +184,6 @@ h1, h2, h3, h4, h5 {
     .titleimg {
         display: none;
     }
-    .information {
-        padding: 25px;
-    }
     .infoimg {
         width: 100%;
     }
@@ -187,46 +193,38 @@ h1, h2, h3, h4, h5 {
 }
 /* adds phone*/
 @media(max-width: 500px){
-    .header{
+    .header {
         flex-direction: column-reverse;
+    }
+    .header img {
+    width: 50%
     }
     .header .nav {
         display: flex;
         flex-direction: column;
         margin: 10px 0px;
     }
-    .header .nav a{
+    .header .nav a {
         padding: 15px 200px;
         margin: 0;
         border-bottom: 1px solid gray;
     }
-    .header .nav:first-child{
+    .header .nav:first-child {
         border-top: 1px solid gray;
     }
-   .title{
-      justify-content: space-evenly;
-       padding: 50px;
-   }
-   .information{
+    .title {
+      width: 30%;
+    }
+   .information {
        flex-direction: column;
-       padding: 10px 0px;
-       margin: 0 15px;
+        width: 100%;
    }
-   .information div{
-       width: 100%;
-   }
-   .infoimg{
-       margin: 5px;
-   }
-   .information2{
+
+   .information2 {
     flex-direction: column;
-    padding: 10px 0px;
-    margin: 0 15px;
+    width: 
    }
-   .information2 div{
-    margin-top: 20px;
-    width: 100%;
-}
+ 
 
 
 }
