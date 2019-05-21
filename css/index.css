@@ -58,9 +58,9 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-* {
+/* {
   width: 900px;
-}
+}*/
 .header {
   width: 100%;
   height: 20%;
@@ -80,23 +80,23 @@ h1, h2, h3, h4, h5 {
   color: black;
   text-decoration: none;
 }
-.header img.logo{
+.header img.logo {
   width: 150px;
   margin-top: 25px;
 }
-.title{
+.title {
   width: 95%;
   margin: 50px 0;
   display: flex;
   justify-content: space-around;
 }
-.title h1{
+.title h1 {
   height: 250px;
   width: 25%;
   font-size: 75px;
   text-align: center;
 }
-.title button{
+.title button {
   font-size: 20px;
   width: 150px;
   height: 30px;
@@ -105,107 +105,97 @@ h1, h2, h3, h4, h5 {
   border-radius: 10%;
   cursor: pointer;
 }
-.titleimg{
+.titleimg {
   width: 300px;
   height: 300px;
 }
-.information{
+.information {
   border-top: black 1px solid;
   width: 95%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 25px 0px;
+  justify-content: space-around;
+  padding: 25px;
 }
-.information div{
+.information div {
   width: 50%;
 }
-.information p{
-  width: 80%;
+.information p {
   height: 100px;
 }
-.infoimg{
+.infoimg {
   width: 95%;
 }
-.information2{
+.information2 {
   width: 95%;
   border-bottom: black 1px solid;
   display: flex;
   flex-wrap: wrap;
-  padding: 25px 0px;
+  justify-content: space-around;
+  padding: 25px;
 }
-.information2 div{
+.information2 div {
   width: 33%;
 }
-.information2 p{
-  width: 90%;
-}
-.information2 h2{
+
+.information2 h2 {
   padding-right: 180px;
 }
-
-address{
+.address {
   width: 20%;
   letter-spacing: 2;
 }
-.copyright{
+.copyright {
   padding: 25px;
   margin-left: 45%;
 }
 /* tablet styling*/
 @media (max-width: 800px){
-    .header{
+    .header {
         width: 100%;
         flex-direction: column-reverse;
     }
     .header .nav {
         width: 95%;
         margin: 10px 50px;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
-    .header .nav a{
+    .header .nav a {
         color: grey;
     }
-    .header img{
+    .header img {
        width: 150px;
-       justify-content: center;
+       justify-content: space-evenly;
        margin: 0 auto; 
     }
-    .title{
+    .title {
         width: 80%;
         justify-content: space-evenly;
     }
-    .titleimg{
+    .titleimg {
         display: none;
     }
-    .information{
-        padding-top: 25px;
-        width: 80%;
+    .information {
+        padding: 25px;
     }
-    .infoimg{
-        width: 80%;
+    .infoimg {
+        width: 100%;
     }
-    .information2{
-        width: 80%;
-    }
-    .footer{
-        width: 70%;
+    .footer {
+      padding: 25px;
     }
 }
 /* adds phone*/
 @media(max-width: 500px){
     .header{
-        width: 55%;
         flex-direction: column-reverse;
     }
     .header .nav {
         display: flex;
         flex-direction: column;
-        width: 100%;
         margin: 10px 0px;
     }
     .header .nav a{
-        width: 99%;
         padding: 15px 200px;
         margin: 0;
         border-bottom: 1px solid gray;
@@ -214,13 +204,11 @@ address{
         border-top: 1px solid gray;
     }
    .title{
-    justify-content: space-evenly;
-       width: 15%;
+      justify-content: space-evenly;
        padding: 50px;
    }
    .information{
        flex-direction: column;
-       width: 50%;
        padding: 10px 0px;
        margin: 0 15px;
    }
@@ -228,12 +216,10 @@ address{
        width: 100%;
    }
    .infoimg{
-       width: 50%;
        margin: 5px;
    }
    .information2{
     flex-direction: column;
-    width: 50%;
     padding: 10px 0px;
     margin: 0 15px;
    }
@@ -241,22 +227,7 @@ address{
     margin-top: 20px;
     width: 100%;
 }
-.footer{
-    width: 25%;
-    margin: 20px;
-}
-.footer h2{
-    width: 90%;
-    margin: 10px 0;
-  }
-  .footer p{
-    width: 100%;
-    margin: 10px 0;
-  }
-  address{
-    width: 90%;
-    margin: 5px 0 15px;
-  }
+
 
 }
 
