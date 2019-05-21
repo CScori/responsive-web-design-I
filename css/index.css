@@ -60,24 +60,24 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 * {
   width: 900px;
-  margin-left: 50px;
 }
-.header{
+.header {
   width: 100%;
   height: 20%;
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
-.nav{
+.nav {
+  display: flex;
+  justify-content: space-around;
   width: 70%;
   font-size: 20px;
   font-family: 'Gugi', serif;
   margin-top: 50px;
 }
-.nav a{
+.nav a {
   color: black;
-  margin-right: 20px;
   text-decoration: none;
 }
 .header img.logo{
@@ -85,9 +85,8 @@ h1, h2, h3, h4, h5 {
   margin-top: 25px;
 }
 .title{
-  margin-top: 100px;
   width: 95%;
-  margin: 50px;
+  margin: 50px 0;
   display: flex;
   justify-content: space-around;
 }
@@ -103,16 +102,16 @@ h1, h2, h3, h4, h5 {
   height: 30px;
   background: white;
   border: 1px solid black;
+  border-radius: 10%;
+  cursor: pointer;
 }
 .titleimg{
   width: 300px;
   height: 300px;
-  margin-left: 80px;
 }
 .information{
   border-top: black 1px solid;
   width: 95%;
-  margin-left: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -126,13 +125,11 @@ h1, h2, h3, h4, h5 {
   height: 100px;
 }
 .infoimg{
-  margin: 0 50px;
   width: 95%;
 }
 .information2{
   width: 95%;
   border-bottom: black 1px solid;
-  margin: 0px 50px;
   display: flex;
   flex-wrap: wrap;
   padding: 25px 0px;
@@ -146,21 +143,13 @@ h1, h2, h3, h4, h5 {
 .information2 h2{
   padding-right: 180px;
 }
-.footer h2{
-  margin: 25px 0px;
-  margin-left: 50px;
-}
-.footer p{
-  margin: 25px 0px;
-  margin-left: 50px;
-}
+
 address{
-  margin: 0px 50px;
   width: 20%;
   letter-spacing: 2;
 }
 .copyright{
-  margin-top: 50px;
+  padding: 25px;
   margin-left: 45%;
 }
 /* tablet styling*/
@@ -202,7 +191,6 @@ address{
     .footer{
         width: 70%;
     }
-
 }
 /* adds phone*/
 @media(max-width: 500px){
@@ -229,7 +217,6 @@ address{
     justify-content: space-evenly;
        width: 15%;
        padding: 50px;
-
    }
    .information{
        flex-direction: column;
@@ -265,7 +252,6 @@ address{
   .footer p{
     width: 100%;
     margin: 10px 0;
-    l
   }
   address{
     width: 90%;
