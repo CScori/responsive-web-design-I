@@ -58,11 +58,11 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-* {
+
+.container-home {
   max-width: 900px;
   margin: 0 auto;
 }
-
 .header {
   width: 100%;
   height: 20%;
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5 {
   width: 70%;
   font-size: 20px;
   font-family: 'Gugi', serif;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .nav a {
   color: black;
@@ -116,11 +116,11 @@ h1, h2, h3, h4, h5 {
   border-top: black 1px solid;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 25px;
 }
-.information div {
-  width: 50%;
+/*.information div {
+  width: 48%;*/
 }
 .information p {
   width: 100%;
@@ -131,14 +131,15 @@ h1, h2, h3, h4, h5 {
 }
 .information2 {
   width: 95%;
-  border-bottom: black 1px solid;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: black 1px solid;
   justify-content: space-around;
   padding: 25px;
 }
-.information2 div {
-  width: 33%;
+/*.information2 div {
+  width: %;*/
 }
 .information2 p {
   width: 100%;
@@ -168,7 +169,6 @@ h1, h2, h3, h4, h5 {
     }
     .header .nav {
         width: 95%;
-  
         justify-content: space-around;
     }
     .header .nav a {
@@ -221,7 +221,10 @@ h1, h2, h3, h4, h5 {
        flex-direction: column;
         width: 100%;
    }
-
+.information.div {
+  width: 90%;
+  height: 200px;
+}
    .information2 {
     flex-direction: column;
     width: 
@@ -233,18 +236,23 @@ h1, h2, h3, h4, h5 {
 
 
 /* Service page CSS*/
+.container-service {
+  max-width: 900px;
+  margin: 0 auto;
+}
 .shi{
   width: 100%;
   height:200px;
+  padding: 25px 0;
 }
 .servicepg{
+  display: flex;
+  flex-direction: column;
   width: 95%;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   border-bottom: black solid 1px;
 }
-.servicepg h2{
-  margin-top: 50px;
-}
+
 .serviceopt p{
   width: 100%;
   word-wrap: break-word;
@@ -254,9 +262,9 @@ h1, h2, h3, h4, h5 {
  flex-wrap: wrap;
  justify-content: center;
  align-content: space-between;
- width: 98%;
- margin: 25px;
- margin-right: 50px;
+ width: 95%;
+ margin: 25px 0;
+
 }
  .serviceopt button{
    font-size: 15px;
@@ -264,8 +272,10 @@ h1, h2, h3, h4, h5 {
    width: 150px;
    height: 30px;
    background: white;
+   border-radius: 12%;
    border: black solid 1px;
    margin: 15px;
+   cursor: pointer;
  } 
 .dd{
   background: rgb(228, 226, 225);
@@ -273,7 +283,7 @@ h1, h2, h3, h4, h5 {
   height: 225px;
   padding: 15px;
   border: 1px solid black;
-  margin: 0px 50px 25px 0;
+  margin-right: 50px;
 }
 .ux{
   margin: 0;
@@ -289,18 +299,20 @@ h1, h2, h3, h4, h5 {
   height: 225px;
   padding: 15px;
   border: 1px solid black;
-  margin: 25px 25px 25px 0px;
+  margin-right: 50px;
+  margin-top: 50px;
 }
 .wd{
-  margin: 25px 0px 25px 25px;
-  padding: 15px;
+  margin-top: 50px;
+  background:  rgb(228, 226, 225);
   border: 1px solid black;
-  background: rgb(228, 226, 225);
   width: 48%;
   height: 225px;
+  padding: 15px;
 }
-.ios{
-  margin: 25px 25px 0px 0px;
+.ios {
+  margin-right: 50px;
+  margin-top: 50px;0px;
   background:  rgb(228, 226, 225);
   border: 1px solid black;
   width: 45%;
@@ -308,7 +320,7 @@ h1, h2, h3, h4, h5 {
   padding: 15px;
 }
 .ad{
-  margin: 25px 0px 0px 25px;
+  margin-top: 50px;
   background:  rgb(228, 226, 225);
   border: 1px solid black;
   width: 48%;
@@ -318,10 +330,9 @@ h1, h2, h3, h4, h5 {
 .facts{
   width: 95%;
   height: 350px;
-  padding-top: 50px;
+  padding-top: 25px;
   border-top: solid black 1px; 
-  margin-top: 50px;
-
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   align-content: space-between;
@@ -329,7 +340,6 @@ h1, h2, h3, h4, h5 {
 }
 .f{
   width: 50%;
-  height: 450px;
 }
 .f p{
   width: 85%;
@@ -337,9 +347,252 @@ h1, h2, h3, h4, h5 {
 .facts ul{
   width: 50%;
   line-height: 2;
-  margin-top: 30px;
+  margin-top: 25px;
+  margin-left: 20px;
 }
 .fimg{
   width: 50%;
   height: 300px;
+}
+
+
+/* service page tablet media*/
+
+
+@media (min-width: 300px) {
+  .shi {
+    display: none;
+  }
+  .servicepg {
+    width: 95%;
+    padding: 20px;
+  
+  }
+  .dd {
+    margin: 10px 0;
+    width: 80%;
+    background: whitesmoke;
+    
+  }
+  .ux {
+    margin: 0;
+    width: 80%;
+    background: whitesmoke;
+  }
+  .dm {
+    margin: 10px 0;
+    width: 80%;
+    background: whitesmoke;
+  }
+  .wd {
+    margin: 10px 0;
+    width: 80%;
+    background: whitesmoke;
+  }
+  .ios {
+    margin: 10px 0;
+    width: 80%;
+    background: whitesmoke;
+  }
+  .ad {
+    margin: 10px 0;
+    width: 80%;
+    background: whitesmoke;
+  }
+  .fimg {
+    display: none;
+  }
+  .facts {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 50px; 
+  }
+.f .f1 {
+  width: 200px;
+}
+  .serviceopt button {
+    display: none;
+  }
+}
+/* service page tablet media*/
+@media (min-width: 700px){
+  .header {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .header .nav {
+    width: 95%;
+    justify-content: space-around;
+}
+
+  .header .nav a {
+    color: grey;
+}
+.header img {
+   width: 150px;
+   justify-content: space-evenly;
+   margin: 0 auto; 
+}
+.shi {
+  display: none;
+}
+.servicepg {
+  margin: 25px;
+}
+.dd {
+  margin: 0;
+  width: 40%;
+}
+.ux {
+  margin: 0;
+  width: 40%;
+}
+.dm {
+  margin: 0;
+  width: 40%;
+}
+.wd {
+  margin: 0;
+  width: 40%;
+}
+.ios {
+  margin: 0;
+  width: 40%;
+}
+.ad {
+  margin: 0;
+  width: 40%;
+}
+.fimg {
+  display: none;
+}
+.f {
+  display: flex;
+  flex-direction: column;
+  margin: 0 75px;
+}
+}
+
+/* standard query*/
+@media (min-width: 900px){
+  .container-service {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .shi{
+    display: 
+    width: 100%;
+    height:200px;
+    padding: 25px 0;
+  }
+  .servicepg{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding-bottom: 25px;
+    border-bottom: black solid 1px;
+  }
+  
+  .serviceopt p{
+    width: 100%;
+    word-wrap: break-word;
+  }
+  .serviceopt{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: space-between;
+   width: 95%;
+   margin: 25px 0;
+  
+  }
+   .serviceopt button{
+     font-size: 15px;
+     font-family: Arial, sans-serif;
+     width: 150px;
+     height: 30px;
+     background: white;
+     border-radius: 12%;
+     border: black solid 1px;
+     margin: 15px;
+     cursor: pointer;
+   } 
+  .dd{
+    background: rgb(228, 226, 225);
+    width: 45%;
+    height: 225px;
+    padding: 15px;
+    border: 1px solid black;
+    margin-right: 50px;
+  }
+  .ux{
+    margin: 0;
+    background:  rgb(228, 226, 225);
+    border: 1px solid black;
+    width: 48%;
+    height: 225px;
+    padding: 15px;
+  }
+  .dm{
+    background:  rgb(228, 226, 225);
+    width: 45%;
+    height: 225px;
+    padding: 15px;
+    border: 1px solid black;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+  .wd{
+    margin-top: 50px;
+    background:  rgb(228, 226, 225);
+    border: 1px solid black;
+    width: 48%;
+    height: 225px;
+    padding: 15px;
+  }
+  .ios {
+    margin-right: 50px;
+    margin-top: 50px;0px;
+    background:  rgb(228, 226, 225);
+    border: 1px solid black;
+    width: 45%;
+    height: 225px;
+    padding: 15px;
+  }
+  .ad{
+    margin-top: 50px;
+    background:  rgb(228, 226, 225);
+    border: 1px solid black;
+    width: 48%;
+    height: 225px;
+    padding: 15px;
+  }
+  .facts{
+    width: 95%;
+    height: 350px;
+    padding-top: 25px;
+    border-top: solid black 1px; 
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    line-height: 1;
+  }
+  .f{
+    width: 50%;
+  }
+  .f p{
+    width: 85%;
+  }
+  .facts ul{
+    width: 50%;
+    line-height: 2;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+  .fimg{
+    width: 50%;
+    height: 300px;
+  }
 }
