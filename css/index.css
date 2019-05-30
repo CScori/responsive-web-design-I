@@ -1,3 +1,598 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container-home {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  font-size: 20px;
+  font-family: 'Gugi', serif;
+  margin-top: 30px;
+}
+.nav a {
+  color: black;
+  text-decoration: none;
+}
+.header img.logo {
+  width: 150px;
+  margin-top: 25px;
+}
+.title {
+  width: 95%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.title h1 {
+  height: 250px;
+  width: 25%;
+  font-size: 75px;
+  text-align: center;
+}
+.title button {
+  font-size: 20px;
+  width: 150px;
+  height: 30px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.titleimg {
+  width: 300px;
+  height: 300px;
+}
+.information {
+  width: 95%;
+  border-top: black 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px;
+}
+/*.information div {
+  width: 48%;*/
+}
+.information p {
+  width: 100%;
+  height: 100px;
+}
+.infoimg {
+  width: 95%;
+}
+.information2 {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: black 1px solid;
+  justify-content: space-around;
+  padding: 25px;
+}
+/*.information2 div {
+  width: %;*/
+}
+.information2 p {
+  width: 100%;
+  height: 100px;
+}
+.information2 h2 {
+  padding-right: 180px;
+}
+.footer {
+  padding: 25px;
+}
+.address {
+  width: 20%;
+  letter-spacing: 2;
+}
+.copyright {
+  padding: 25px;
+  margin-left: 45%;
+}
 
 
+/* tablet styling*/
+@media (max-width: 800px){
+    .header {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .header .nav {
+        width: 95%;
+        justify-content: space-around;
+    }
+    .header .nav a {
+        color: grey;
+    }
+    .header img {
+       width: 150px;
+       justify-content: space-evenly;
+       margin: 0 auto; 
+    }
+    .title {
+        width: 80%;
+        justify-content: space-evenly;
+    }
+    .titleimg {
+        display: none;
+    }
+    .infoimg {
+        width: 100%;
+    }
+    .footer {
+      padding: 25px;
+    }
+}
+/* phone styling */
+@media(max-width: 500px){
+    .header {
+        flex-direction: column-reverse;
+    }
+    .header img {
+    width: 50%
+    }
+    .header .nav {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    .header .nav a {
+        padding: 15px 200px;
+        margin: 0;
+        border-bottom: 1px solid gray;
+    }
+    .header .nav:first-child {
+        border-top: 1px solid gray;
+    }
+    .title {
+      width: 30%;
+    }
+   .information {
+       flex-direction: column;
+        width: 100%;
+   }
+.information.div {
+  width: 90%;
+  height: 200px;
+}
+   .information2 {
+    flex-direction: column;
+    width: 
+   }
+ 
+
+
+}
+
+
+/* Service page CSS*/
+.container-service {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.shi{
+  width: 100%;
+  height:200px;
+  padding: 25px 0;
+}
+.servicepg{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  padding-bottom: 25px;
+  border-bottom: black solid 1px;
+}
+
+.serviceopt p{
+  width: 100%;
+  word-wrap: break-word;
+}
+.serviceopt{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-content: space-between;
+ width: 95%;
+ margin: 25px 0;
+
+}
+ .serviceopt button{
+   font-size: 15px;
+   font-family: Arial, sans-serif;
+   width: 150px;
+   height: 30px;
+   background: white;
+   border-radius: 12%;
+   border: black solid 1px;
+   margin: 15px;
+   cursor: pointer;
+ } 
+.dd{
+  background: rgb(228, 226, 225);
+  width: 45%;
+  height: 225px;
+  padding: 15px;
+  border: 1px solid black;
+  margin-right: 50px;
+}
+.ux{
+  margin: 0;
+  background:  rgb(228, 226, 225);
+  border: 1px solid black;
+  width: 48%;
+  height: 225px;
+  padding: 15px;
+}
+.dm{
+  background:  rgb(228, 226, 225);
+  width: 45%;
+  height: 225px;
+  padding: 15px;
+  border: 1px solid black;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.wd{
+  margin-top: 50px;
+  background:  rgb(228, 226, 225);
+  border: 1px solid black;
+  width: 48%;
+  height: 225px;
+  padding: 15px;
+}
+.ios {
+  margin-right: 50px;
+  margin-top: 50px;0px;
+  background:  rgb(228, 226, 225);
+  border: 1px solid black;
+  width: 45%;
+  height: 225px;
+  padding: 15px;
+}
+.ad{
+  margin-top: 50px;
+  background:  rgb(228, 226, 225);
+  border: 1px solid black;
+  width: 48%;
+  height: 225px;
+  padding: 15px;
+}
+.facts{
+  width: 95%;
+  height: 350px;
+  padding-top: 25px;
+  border-top: solid black 1px; 
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  line-height: 1;
+}
+.f{
+  width: 50%;
+}
+.f p{
+  width: 85%;
+}
+.facts ul{
+  width: 50%;
+  line-height: 2;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.fimg{
+  width: 50%;
+  height: 300px;
+}
+
+
+/* service page tablet media*/
+
+
+@media (min-width: 300px) {
+  .shi {
+    display: none;
+  }
+  .servicepg {
+    width: 95%;
+    padding: 20px;
+  
+  }
+  .dd {
+    margin: 10px 0;
+    width: 80%;
+    background: whitesmoke;
+    
+  }
+  .ux {
+    margin: 0;
+    width: 80%;
+    background: whitesmoke;
+  }
+  .dm {
+    margin: 10px 0;
+    width: 80%;
+    background: whitesmoke;
+  }
+  .wd {
+    margin: 10px 0;
+    width: 80%;
+    background: whitesmoke;
+  }
+  .ios {
+    margin: 10px 0;
+    width: 80%;
+    background: whitesmoke;
+  }
+  .ad {
+    margin: 10px 0;
+    width: 80%;
+    background: whitesmoke;
+  }
+  .fimg {
+    display: none;
+  }
+  .facts {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 50px; 
+  }
+.f .f1 {
+  width: 200px;
+}
+  .serviceopt button {
+    display: none;
+  }
+}
+/* service page tablet media*/
+@media (min-width: 700px){
+  .header {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .header .nav {
+    width: 95%;
+    justify-content: space-around;
+}
+
+  .header .nav a {
+    color: grey;
+}
+.header img {
+   width: 150px;
+   justify-content: space-evenly;
+   margin: 0 auto; 
+}
+.shi {
+  display: none;
+}
+.servicepg {
+  margin: 25px;
+}
+.dd {
+  margin: 0;
+  width: 40%;
+}
+.ux {
+  margin: 0;
+  width: 40%;
+}
+.dm {
+  margin: 0;
+  width: 40%;
+}
+.wd {
+  margin: 0;
+  width: 40%;
+}
+.ios {
+  margin: 0;
+  width: 40%;
+}
+.ad {
+  margin: 0;
+  width: 40%;
+}
+.fimg {
+  display: none;
+}
+.f {
+  display: flex;
+  flex-direction: column;
+  margin: 0 75px;
+}
+}
+
+/* standard query*/
+@media (min-width: 900px){
+  .container-service {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .shi{
+    display: 
+    width: 100%;
+    height:200px;
+    padding: 25px 0;
+  }
+  .servicepg{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding-bottom: 25px;
+    border-bottom: black solid 1px;
+  }
+  
+  .serviceopt p{
+    width: 100%;
+    word-wrap: break-word;
+  }
+  .serviceopt{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: space-between;
+   width: 95%;
+   margin: 25px 0;
+  
+  }
+   .serviceopt button{
+     font-size: 15px;
+     font-family: Arial, sans-serif;
+     width: 150px;
+     height: 30px;
+     background: white;
+     border-radius: 12%;
+     border: black solid 1px;
+     margin: 15px;
+     cursor: pointer;
+   } 
+  .dd{
+    background: rgb(228, 226, 225);
+    width: 45%;
+    height: 225px;
+    padding: 15px;
+    border: 1px solid black;
+    margin-right: 50px;
+  }
+  .ux{
+    margin: 0;
+    background:  rgb(228, 226, 225);
+    border: 1px solid black;
+    width: 48%;
+    height: 225px;
+    padding: 15px;
+  }
+  .dm{
+    background:  rgb(228, 226, 225);
+    width: 45%;
+    height: 225px;
+    padding: 15px;
+    border: 1px solid black;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+  .wd{
+    margin-top: 50px;
+    background:  rgb(228, 226, 225);
+    border: 1px solid black;
+    width: 48%;
+    height: 225px;
+    padding: 15px;
+  }
+  .ios {
+    margin-right: 50px;
+    margin-top: 50px;0px;
+    background:  rgb(228, 226, 225);
+    border: 1px solid black;
+    width: 45%;
+    height: 225px;
+    padding: 15px;
+  }
+  .ad{
+    margin-top: 50px;
+    background:  rgb(228, 226, 225);
+    border: 1px solid black;
+    width: 48%;
+    height: 225px;
+    padding: 15px;
+  }
+  .facts{
+    width: 95%;
+    height: 350px;
+    padding-top: 25px;
+    border-top: solid black 1px; 
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    line-height: 1;
+  }
+  .f{
+    width: 50%;
+  }
+  .f p{
+    width: 85%;
+  }
+  .facts ul{
+    width: 50%;
+    line-height: 2;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+  .fimg{
+    width: 50%;
+    height: 300px;
+  }
+}
